@@ -7,12 +7,13 @@
 //
 
 #import "GRFXAppDelegate.h"
+#import "GMSServices.h"
 
 @implementation GRFXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [GMSServices provideAPIKey:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"GoogleMapAPIKey"]];
     return YES;
 }
 							

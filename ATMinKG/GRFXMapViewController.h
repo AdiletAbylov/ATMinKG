@@ -1,5 +1,5 @@
 //
-//  GRFXViewController.h
+//  GRFXMapViewController.h
 //  ATMinKG
 //
 //  Created by Adilet Abylov on 10/25/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GRFXViewController : UIViewController
+@interface GRFXMapViewController : UIViewController
 
 @end
