@@ -17,6 +17,8 @@
     NSString *_cardTypeString;
     NSString *_bankName;
     NSString *_atmId;
+    double _lng;
+    double _lat;
 }
 @synthesize address = _address;
 @synthesize coordinate = _coordinate;
@@ -26,18 +28,28 @@
 
 @synthesize atmId = _atmId;
 
-- (NSString *)bankName
+@synthesize lng = _lng;
+@synthesize lat = _lat;
+
+- (CLLocationCoordinate2D)coordinate
 {
-    switch (_cardType)
+    return CLLocationCoordinate2DMake(_lat, _lng);
+}
+
+- (CardType)cardType
+{
+    if ([_cardTypeString isEqualToString:@"Visa"])
     {
-        case CardTypeMasterCard:
-            return @"MasterCard";
-
-        case CardTypeVisa:
-            return @"Visa";
-
-        default:
-            return @"";
+        return CardTypeVisa;
     }
+    if ([_cardTypeString isEqualToString:@"MasterCard"])
+    {
+        return CardTypeMasterCard;
+    }
+    if ([_cardTypeString isEqualToString:@"Both"])
+    {
+        return CardTypeVisaMasterCard;
+    }
+    return nil;
 }
 @end

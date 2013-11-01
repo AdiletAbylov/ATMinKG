@@ -12,13 +12,15 @@ typedef enum CardType
     CardTypeVisa,
     CardTypeMasterCard,
     CardTypeVisaMasterCard
-}CardType;
+} CardType;
 
 @interface GRFXATM : NSObject
 @property NSString *atmId;
 @property NSString *address;
-@property CLLocationCoordinate2D coordinate;
-@property CardType cardType;
-@property (readonly) NSString *cardTypeString;
+@property double lng;
+@property double lat;
+@property(readonly) CLLocationCoordinate2D coordinate;
+@property(readonly) CardType cardType;
+@property NSString *cardTypeString;
 @property NSString *bankName;
 @end
