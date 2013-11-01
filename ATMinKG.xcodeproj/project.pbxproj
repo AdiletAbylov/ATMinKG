@@ -23,6 +23,7 @@
 		60FF98BC181A7F370093C838 /* ATMinKGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FF98BB181A7F370093C838 /* ATMinKGTests.m */; };
 		71F0F716EA28814081AAE655 /* GRFXATMProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0F7492A8158580CAAD132 /* GRFXATMProxy.m */; };
 		71F0F9BEFD4D6FE2A1FDD9B4 /* GRFXATM.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FCFA13982542571A42BE /* GRFXATM.m */; };
+		71F0FD0F60F8451AFF634FCB /* GRFXParsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FBD8D072A4886B05B881 /* GRFXParsers.m */; };
 		7AAC0416BA6A4465B706ED79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEE78E4B4EA49DD8C60D9C8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +61,11 @@
 		60FF98BB181A7F370093C838 /* ATMinKGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATMinKGTests.m; sourceTree = "<group>"; };
 		71F0F189C496FBB88637E004 /* GRFXATMProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXATMProxy.h; sourceTree = "<group>"; };
 		71F0F351066EA68AE90DF5CE /* GRFXATM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXATM.h; sourceTree = "<group>"; };
+		71F0F3D2F30B0D23D057A5D0 /* GRFXProxyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXProxyDelegate.h; sourceTree = "<group>"; };
 		71F0F7492A8158580CAAD132 /* GRFXATMProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXATMProxy.m; sourceTree = "<group>"; };
+		71F0FBD8D072A4886B05B881 /* GRFXParsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXParsers.m; sourceTree = "<group>"; };
 		71F0FCFA13982542571A42BE /* GRFXATM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXATM.m; sourceTree = "<group>"; };
+		71F0FF1D42234948468D72F2 /* GRFXParsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXParsers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 				60FF9897181A7F370093C838 /* Supporting Files */,
 				71F0FF7E00C98732CB0148ED /* service */,
 				71F0F4FFC7147E0C5ED43804 /* Model */,
+				71F0F5777BCC7B2B33B61506 /* utils */,
 			);
 			path = ATMinKG;
 			sourceTree = "<group>";
@@ -175,11 +180,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		71F0F5777BCC7B2B33B61506 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				71F0FBD8D072A4886B05B881 /* GRFXParsers.m */,
+				71F0FF1D42234948468D72F2 /* GRFXParsers.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		71F0FF7E00C98732CB0148ED /* service */ = {
 			isa = PBXGroup;
 			children = (
 				71F0F7492A8158580CAAD132 /* GRFXATMProxy.m */,
 				71F0F189C496FBB88637E004 /* GRFXATMProxy.h */,
+				71F0F3D2F30B0D23D057A5D0 /* GRFXProxyDelegate.h */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -322,6 +337,7 @@
 				60FF98A1181A7F370093C838 /* GRFXAppDelegate.m in Sources */,
 				71F0F9BEFD4D6FE2A1FDD9B4 /* GRFXATM.m in Sources */,
 				71F0F716EA28814081AAE655 /* GRFXATMProxy.m in Sources */,
+				71F0FD0F60F8451AFF634FCB /* GRFXParsers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

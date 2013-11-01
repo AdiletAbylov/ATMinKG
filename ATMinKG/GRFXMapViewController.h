@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GRFXATMProxy.h"
 
-@interface GRFXMapViewController : UIViewController
+@interface GRFXMapViewController : UIViewController<GRFXATMProxyDelegate>
 
 @end
