@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Google-Maps-iOS-SDK/GoogleMaps/GMSMapView.h>
 #import "GRFXATMProxy.h"
 
-@interface GRFXMapViewController : UIViewController<GRFXATMProxyDelegate>
+@interface GRFXMapViewController : UIViewController<GRFXATMProxyDelegate, GMSMapViewDelegate>
 
 @end
