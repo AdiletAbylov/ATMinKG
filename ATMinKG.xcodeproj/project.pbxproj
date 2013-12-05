@@ -21,10 +21,12 @@
 		60FF98B2181A7F370093C838 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FF9894181A7F370093C838 /* UIKit.framework */; };
 		60FF98BA181A7F370093C838 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60FF98B8181A7F370093C838 /* InfoPlist.strings */; };
 		60FF98BC181A7F370093C838 /* ATMinKGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FF98BB181A7F370093C838 /* ATMinKGTests.m */; };
+		71F0F1EDCEF74D6B7949DCC0 /* iconAtm.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0F351AD377DE5B0C09619 /* iconAtm.png */; };
 		71F0F716EA28814081AAE655 /* GRFXATMProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0F7492A8158580CAAD132 /* GRFXATMProxy.m */; };
 		71F0F9BEFD4D6FE2A1FDD9B4 /* GRFXATM.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FCFA13982542571A42BE /* GRFXATM.m */; };
 		71F0FD0F60F8451AFF634FCB /* GRFXParsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FBD8D072A4886B05B881 /* GRFXParsers.m */; };
 		71F0FE4B6C1CB28846C9A8CC /* GRFXATMDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0F11145E0975DC49CA9BE /* GRFXATMDetailsViewController.m */; };
+		71F0FF0830D1A6A3CAD4D462 /* iconAtm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0F29B5E09CDF0F332A1E7 /* iconAtm@2x.png */; };
 		7AAC0416BA6A4465B706ED79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEE78E4B4EA49DD8C60D9C8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +64,9 @@
 		60FF98BB181A7F370093C838 /* ATMinKGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATMinKGTests.m; sourceTree = "<group>"; };
 		71F0F11145E0975DC49CA9BE /* GRFXATMDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXATMDetailsViewController.m; sourceTree = "<group>"; };
 		71F0F189C496FBB88637E004 /* GRFXATMProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXATMProxy.h; sourceTree = "<group>"; };
+		71F0F29B5E09CDF0F332A1E7 /* iconAtm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconAtm@2x.png"; sourceTree = "<group>"; };
 		71F0F351066EA68AE90DF5CE /* GRFXATM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXATM.h; sourceTree = "<group>"; };
+		71F0F351AD377DE5B0C09619 /* iconAtm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconAtm.png; sourceTree = "<group>"; };
 		71F0F3D2F30B0D23D057A5D0 /* GRFXProxyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXProxyDelegate.h; sourceTree = "<group>"; };
 		71F0F7492A8158580CAAD132 /* GRFXATMProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXATMProxy.m; sourceTree = "<group>"; };
 		71F0F8D2EDF275727B26ACFF /* GRFXATMDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXATMDetailsViewController.h; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 				71F0F5777BCC7B2B33B61506 /* utils */,
 				71F0F11145E0975DC49CA9BE /* GRFXATMDetailsViewController.m */,
 				71F0F8D2EDF275727B26ACFF /* GRFXATMDetailsViewController.h */,
+				71F0F0DB12C68D653826F39A /* Assets */,
 			);
 			path = ATMinKG;
 			sourceTree = "<group>";
@@ -174,6 +179,15 @@
 				60FF98B8181A7F370093C838 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71F0F0DB12C68D653826F39A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				71F0F351AD377DE5B0C09619 /* iconAtm.png */,
+				71F0F29B5E09CDF0F332A1E7 /* iconAtm@2x.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		71F0F4FFC7147E0C5ED43804 /* Model */ = {
@@ -286,6 +300,8 @@
 				60FF98A9181A7F370093C838 /* Images.xcassets in Resources */,
 				60FF989B181A7F370093C838 /* InfoPlist.strings in Resources */,
 				60FF98A4181A7F370093C838 /* Main.storyboard in Resources */,
+				71F0F1EDCEF74D6B7949DCC0 /* iconAtm.png in Resources */,
+				71F0FF0830D1A6A3CAD4D462 /* iconAtm@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

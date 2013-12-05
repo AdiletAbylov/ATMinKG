@@ -80,6 +80,7 @@
         GMSMarker *marker = [GMSMarker markerWithPosition:atm.coordinate];
         marker.title = atm.bankName;
         marker.snippet = atm.address;
+        marker.icon = [UIImage imageNamed:@"iconAtm.png"];
         marker.map = _mapView;
         marker.userData = atm;
     }
