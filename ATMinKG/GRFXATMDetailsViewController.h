@@ -12,7 +12,9 @@
 @interface GRFXATMDetailsViewController : UITableViewController
 @property(weak) IBOutlet UILabel *bankNameLabel;
 @property(weak) IBOutlet UILabel *addressLabel;
-@property(weak) IBOutlet UILabel *cardTypeLabel;
+@property (weak) IBOutlet UIImageView *visaCardImageView;
+@property (weak) IBOutlet UIImageView *masterCardImageView;
+
 
 @property GRFXATM *atm;
 

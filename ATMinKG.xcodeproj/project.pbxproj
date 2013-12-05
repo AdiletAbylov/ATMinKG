@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		604B826518509C42008587BA /* iconVisaDetails.png in Resources */ = {isa = PBXBuildFile; fileRef = 604B826318509C42008587BA /* iconVisaDetails.png */; };
+		604B826618509C42008587BA /* iconVisaDetails@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 604B826418509C42008587BA /* iconVisaDetails@2x.png */; };
+		604B826918509C4D008587BA /* iconMastercardDetails.png in Resources */ = {isa = PBXBuildFile; fileRef = 604B826718509C4D008587BA /* iconMastercardDetails.png */; };
+		604B826A18509C4D008587BA /* iconMastercardDetails@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 604B826818509C4D008587BA /* iconMastercardDetails@2x.png */; };
 		60FF9891181A7F370093C838 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FF9890181A7F370093C838 /* Foundation.framework */; };
 		60FF9893181A7F370093C838 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FF9892181A7F370093C838 /* CoreGraphics.framework */; };
 		60FF9895181A7F370093C838 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FF9894181A7F370093C838 /* UIKit.framework */; };
@@ -43,6 +47,10 @@
 /* Begin PBXFileReference section */
 		54998F5DF17F47A589697D02 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		5FEE78E4B4EA49DD8C60D9C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		604B826318509C42008587BA /* iconVisaDetails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconVisaDetails.png; sourceTree = "<group>"; };
+		604B826418509C42008587BA /* iconVisaDetails@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconVisaDetails@2x.png"; sourceTree = "<group>"; };
+		604B826718509C4D008587BA /* iconMastercardDetails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMastercardDetails.png; sourceTree = "<group>"; };
+		604B826818509C4D008587BA /* iconMastercardDetails@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconMastercardDetails@2x.png"; sourceTree = "<group>"; };
 		60FF988D181A7F370093C838 /* ATMinKG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMinKG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FF9890181A7F370093C838 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		60FF9892181A7F370093C838 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -184,6 +192,10 @@
 		71F0F0DB12C68D653826F39A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				604B826718509C4D008587BA /* iconMastercardDetails.png */,
+				604B826818509C4D008587BA /* iconMastercardDetails@2x.png */,
+				604B826318509C42008587BA /* iconVisaDetails.png */,
+				604B826418509C42008587BA /* iconVisaDetails@2x.png */,
 				71F0F351AD377DE5B0C09619 /* iconAtm.png */,
 				71F0F29B5E09CDF0F332A1E7 /* iconAtm@2x.png */,
 			);
@@ -297,10 +309,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604B826618509C42008587BA /* iconVisaDetails@2x.png in Resources */,
+				604B826918509C4D008587BA /* iconMastercardDetails.png in Resources */,
 				60FF98A9181A7F370093C838 /* Images.xcassets in Resources */,
 				60FF989B181A7F370093C838 /* InfoPlist.strings in Resources */,
+				604B826A18509C4D008587BA /* iconMastercardDetails@2x.png in Resources */,
 				60FF98A4181A7F370093C838 /* Main.storyboard in Resources */,
 				71F0F1EDCEF74D6B7949DCC0 /* iconAtm.png in Resources */,
+				604B826518509C42008587BA /* iconVisaDetails.png in Resources */,
 				71F0FF0830D1A6A3CAD4D462 /* iconAtm@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
