@@ -13,6 +13,7 @@
 #import "GMSMarker.h"
 #import "GMSOverlay.h"
 #import "GRFXATMDetailsViewController.h"
+#import "GMSMapView+Animation.h"
 
 
 @interface GRFXMapViewController ()
@@ -35,8 +36,10 @@
     [self fetchAllATMs];
 
 }
+
 - (void)viewDidAppear:(BOOL)animated
 {
+
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
 }
 
@@ -48,6 +51,7 @@
     _mapView.settings.myLocationButton = YES;
     _mapView.settings.compassButton = YES;
     _mapView.delegate = self;
+    [_mapView addObserver:self forKeyPath:@"myLocation" options:NSKeyValueObservingOptionNew context:NULL];
     self.view = _mapView;
 }
 
@@ -73,9 +77,9 @@
 
 }
 
--(void)addMarkersToMap
+- (void)addMarkersToMap
 {
-    for(GRFXATM *atm in _atms)
+    for (GRFXATM *atm in _atms)
     {
         GMSMarker *marker = [GMSMarker markerWithPosition:atm.coordinate];
         marker.title = atm.bankName;
@@ -84,6 +88,12 @@
         marker.map = _mapView;
         marker.userData = atm;
     }
+}
+
+- (void)moveMapToMyLocation
+{
+    GMSCameraPosition *position = [GMSCameraPosition cameraWithTarget:_mapView.myLocation.coordinate zoom:14];
+    [_mapView animateToCameraPosition:position];
 }
 
 - (void)mapView:(GMSMapView *)mapView didTapInfoWindowOfMarker:(GMSMarker *)marker
@@ -98,4 +108,13 @@
     detailsViewController.atm = _selectedMarker.userData;
 }
 
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([keyPath isEqualToString:@"myLocation"])
+    {
+        [self moveMapToMyLocation];
+        [_mapView removeObserver:self forKeyPath:@"myLocation"];
+    }
+}
 @end
