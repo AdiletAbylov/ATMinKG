@@ -42,7 +42,7 @@
 
 - (void)initMap
 {
-    GMSCameraPosition *cameraPosition = [GMSCameraPosition cameraWithTarget:CLLocationCoordinate2DMake(42.8700000, 74.5900000) zoom:12];
+    GMSCameraPosition *cameraPosition = [GMSCameraPosition cameraWithTarget:BISHKEK_CENTER zoom:12];
     _mapView = [GMSMapView mapWithFrame:CGRectZero camera:cameraPosition];
     _mapView.myLocationEnabled = YES;
     _mapView.settings.myLocationButton = YES;

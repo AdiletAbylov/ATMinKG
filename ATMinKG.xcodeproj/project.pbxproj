@@ -280,6 +280,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Adilet Abylov";
 				TargetAttributes = {
+					60FF988C181A7F370093C838 = {
+						DevelopmentTeam = VMU86T7C97;
+					};
 					60FF98AD181A7F370093C838 = {
 						TestTargetID = 60FF988C181A7F370093C838 /* ATMinKG */;
 					};
@@ -503,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ATMinKG/ATMinKG-Prefix.pch";
 				INFOPLIST_FILE = "ATMinKG/ATMinKG-Info.plist";
@@ -519,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ATMinKG/ATMinKG-Prefix.pch";
 				INFOPLIST_FILE = "ATMinKG/ATMinKG-Info.plist";

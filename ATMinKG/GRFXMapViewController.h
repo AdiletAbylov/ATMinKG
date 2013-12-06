@@ -10,6 +10,8 @@
 #import <Google-Maps-iOS-SDK/GoogleMaps/GMSMapView.h>
 #import "GRFXATMProxy.h"
 
+#define BISHKEK_CENTER CLLocationCoordinate2DMake(42.8700000, 74.5900000)
+
 @interface GRFXMapViewController : UIViewController<GRFXATMProxyDelegate, GMSMapViewDelegate>
 
 @end
