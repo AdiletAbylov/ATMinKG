@@ -44,18 +44,18 @@
 
 
 
-- (CardType)cardType
+- (CardTypeFilter)cardType
 {
     switch (_cardsSegmentedControl.selectedSegmentIndex)
     {
         case 0:
-            return CardTypeVisaMasterCard;
+            return CardTypeFilterAll;
         case 1:
-            return CardTypeVisa;
+            return CardTypeFilterVisa;
         case 2:
-            return CardTypeMasterCard;
+            return CardTypeFilterMaster;
     }
-    return CardTypeVisaMasterCard;
+    return CardTypeFilterAll;
 }
 
 - (IBAction)didTouchApply:(id)sender

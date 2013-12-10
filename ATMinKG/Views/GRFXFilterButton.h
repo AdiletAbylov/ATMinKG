@@ -4,10 +4,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GRFXATM.h"
+#import "GRFXFilterView.h"
 
 
 @interface GRFXFilterButton : UIButton
-@property(nonatomic) CardType selectedCardType;
+@property(nonatomic) CardTypeFilter selectedCardTypeFilter;
 @property(nonatomic) NSString *selectedBank;
 @end

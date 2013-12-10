@@ -36,6 +36,7 @@
 		71F0F716EA28814081AAE655 /* GRFXATMProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0F7492A8158580CAAD132 /* GRFXATMProxy.m */; };
 		71F0F71EE3F2002C9AA50D57 /* iconVisa.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0F16DD4CA5827B4A4D429 /* iconVisa.png */; };
 		71F0F797C12D3D58B531ACCE /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FD3C6F4E7870C49FED4B /* UIImage+ImageEffects.m */; };
+		71F0F7D407552E3E0410A606 /* GRFXFilterPredicates.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FACF8485DBE99A1B9420 /* GRFXFilterPredicates.m */; };
 		71F0F9BEFD4D6FE2A1FDD9B4 /* GRFXATM.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FCFA13982542571A42BE /* GRFXATM.m */; };
 		71F0FA1550E6118DC6CB9878 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71F0F0302854B2FABDF607BB /* FilterView.xib */; };
 		71F0FCD9F09A4E70CF9F5C80 /* iconMastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0FF2C977507DA2BA88B9B /* iconMastercard.png */; };
@@ -102,7 +103,9 @@
 		71F0F82CD68A718B4E56BC7F /* UIView+blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+blur.m"; sourceTree = "<group>"; };
 		71F0F85AB7D3ADE4BEA0691F /* filterBarBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filterBarBg@2x.png"; sourceTree = "<group>"; };
 		71F0F8D2EDF275727B26ACFF /* GRFXATMDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXATMDetailsViewController.h; sourceTree = "<group>"; };
+		71F0F96580CAD5B349A83466 /* GRFXFilterPredicates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRFXFilterPredicates.h; path = ATMinKG/utils/GRFXFilterPredicates.h; sourceTree = SOURCE_ROOT; };
 		71F0F97FCA1F153535A1CA01 /* GRFXFilterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXFilterButton.m; sourceTree = "<group>"; };
+		71F0FACF8485DBE99A1B9420 /* GRFXFilterPredicates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GRFXFilterPredicates.m; path = ATMinKG/utils/GRFXFilterPredicates.m; sourceTree = SOURCE_ROOT; };
 		71F0FBD8D072A4886B05B881 /* GRFXParsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXParsers.m; sourceTree = "<group>"; };
 		71F0FCFA13982542571A42BE /* GRFXATM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXATM.m; sourceTree = "<group>"; };
 		71F0FD3C6F4E7870C49FED4B /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -187,6 +190,7 @@
 				71F0F0DB12C68D653826F39A /* Assets */,
 				71F0F8590ED848FD382001F3 /* Views */,
 				71F0F3A8AC10E12A2C85B205 /* Blur */,
+				71F0FFF96D25E1CD3FA8B15F /* Utils */,
 			);
 			path = ATMinKG;
 			sourceTree = "<group>";
@@ -290,6 +294,15 @@
 				71F0F5E8301C9E1B41E71E52 /* GRFXBanksProxy.h */,
 			);
 			path = service;
+			sourceTree = "<group>";
+		};
+		71F0FFF96D25E1CD3FA8B15F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				71F0F96580CAD5B349A83466 /* GRFXFilterPredicates.h */,
+				71F0FACF8485DBE99A1B9420 /* GRFXFilterPredicates.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +466,7 @@
 				71F0F1A0C84A8D31984CA6BD /* GRFXFilterView.m in Sources */,
 				71F0FEEB569D36EAAE18D43B /* UIView+blur.m in Sources */,
 				71F0F797C12D3D58B531ACCE /* UIImage+ImageEffects.m in Sources */,
+				71F0F7D407552E3E0410A606 /* GRFXFilterPredicates.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

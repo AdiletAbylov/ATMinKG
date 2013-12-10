@@ -14,6 +14,7 @@
 #import "GMSMapView+Animation.h"
 #import "GRFXFilterButton.h"
 #import "UIView+blur.h"
+#import "GRFXFilterPredicates.h"
 
 @interface GRFXMapViewController ()
 {
@@ -23,10 +24,11 @@
     NSArray *_atms;
     GMSMarker *_selectedMarker;
     NSArray *_banks;
+    NSArray *_filteredAtms;
     GRFXFilterView *_filterView;
     GRFXFilterButton *_filterButton;
     NSString *_selectedBank;
-    CardType _selectedCardType;
+    CardTypeFilter _selectedCardTypeFilter;
     UIImageView *_snapshotImageView;
 }
 @end
@@ -45,8 +47,8 @@
     _atmProxy.delegate = self;
     _banksProxy = [GRFXBanksProxy new];
     _banksProxy.delegate = self;
-    _selectedBank = @"All banks";
-    _selectedCardType = CardTypeVisaMasterCard;
+    _selectedBank = @"All Banks";
+    _selectedCardTypeFilter = CardTypeFilterAll;
 
     [self fetchAllData];
     [self initFilterButtonAndView];
@@ -81,7 +83,7 @@
     _filterButton = [[GRFXFilterButton alloc] initWithFrame:(CGRect) {12, self.view.frame.size.height - 40 - 7, 241, 40}];
     [self.view addSubview:_filterButton];
     _filterButton.selectedBank = _selectedBank;
-    _filterButton.selectedCardType = _selectedCardType;
+    _filterButton.selectedCardTypeFilter = _selectedCardTypeFilter;
     [_filterButton addTarget:self action:@selector(didTouchFilterButton:) forControlEvents:UIControlEventTouchUpInside];
 
     [self.view addSubview:_filterView];
@@ -102,7 +104,8 @@
 - (void)atmProxyCompleteWithATMS:(NSArray *)array
 {
     _atms = array;
-    [self addMarkersToMap];
+    [self applyFilterWithCardTypeFilter:_selectedCardTypeFilter bankName:_selectedBank];
+    [self showMarkersOnMap];
 }
 
 - (void)proxyRequestFailedWithError:(NSError *)error
@@ -124,9 +127,10 @@
 
 }
 
-- (void)addMarkersToMap
+- (void)showMarkersOnMap
 {
-    for (GRFXATM *atm in _atms)
+    [_mapView clear];
+    for (GRFXATM *atm in _filteredAtms)
     {
         GMSMarker *marker = [GMSMarker markerWithPosition:atm.coordinate];
         marker.title = atm.bankName;
@@ -149,12 +153,14 @@
     [self performSegueWithIdentifier:@"ATMDetailsSegue" sender:self];
 }
 
-- (void)filterViewDidApplyFilterForCards:(CardType)cardType bank:(NSString *)bank
+- (void)filterViewDidApplyFilterForCards:(CardTypeFilter)cardTypeFilter bank:(NSString *)bank
 {
     _selectedBank = bank;
-    _selectedCardType = cardType;
-    _filterButton.selectedCardType = _selectedCardType;
+    _selectedCardTypeFilter = cardTypeFilter;
+    _filterButton.selectedCardTypeFilter = _selectedCardTypeFilter;
     _filterButton.selectedBank = _selectedBank;
+    [self applyFilterWithCardTypeFilter:_selectedCardTypeFilter bankName:_selectedBank];
+    [self showMarkersOnMap];
     [self hideFilterAnimated];
 }
 
@@ -207,6 +213,12 @@
         [_snapshotImageView removeFromSuperview];
         _snapshotImageView = nil;
     }];
+}
 
+
+- (void)applyFilterWithCardTypeFilter:(CardTypeFilter)cardTypeFilter bankName:(NSString *)bankName
+{
+    NSPredicate *predicate = [GRFXFilterPredicates predicateForCardTypeFilter:cardTypeFilter bankName:bankName];
+    _filteredAtms = [_atms filteredArrayUsingPredicate:predicate];
 }
 @end

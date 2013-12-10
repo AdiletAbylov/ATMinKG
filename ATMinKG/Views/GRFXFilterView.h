@@ -7,9 +7,19 @@
 #import <Foundation/Foundation.h>
 #import "GRFXATM.h"
 
+
+typedef enum CardTypeFilter
+{
+    CardTypeFilterAll,
+    CardTypeFilterVisa,
+    CardTypeFilterMaster
+
+} CardTypeFilter;
+
 @protocol GRFXFilterViewDelegate <NSObject>
-- (void)filterViewDidApplyFilterForCards:(CardType)cardType bank:(NSString *)bank;
+- (void)filterViewDidApplyFilterForCards:(CardTypeFilter)cardTypeFilter bank:(NSString *)bank;
 @end
+
 
 @interface GRFXFilterView : UIView <UIPickerViewDelegate, UIPickerViewDataSource>
 

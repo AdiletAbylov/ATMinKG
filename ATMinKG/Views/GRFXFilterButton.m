@@ -4,6 +4,7 @@
 //
 
 #import "GRFXFilterButton.h"
+#import "GRFXFilterView.h"
 
 
 @implementation GRFXFilterButton
@@ -13,10 +14,10 @@
     UILabel *_bankNameLabel;
 
 @private
-    CardType _selectedCardType;
+    CardTypeFilter _selectedCardTypeFilter;
     NSString *_selectedBank;
 }
-@synthesize selectedCardType = _selectedCardType;
+@synthesize selectedCardTypeFilter = _selectedCardTypeFilter;
 @synthesize selectedBank = _selectedBank;
 
 - (id)initWithFrame:(CGRect)frame
@@ -59,19 +60,19 @@
 
 - (void)applyCardTypes
 {
-    switch (_selectedCardType)
+    switch (_selectedCardTypeFilter)
     {
-        case CardTypeVisa:
+        case CardTypeFilterVisa:
             _visaCardImageView.alpha = 1;
             _masterCardImageView.alpha = 0.1;
             break;
 
-        case CardTypeMasterCard:
+        case CardTypeFilterMaster:
             _visaCardImageView.alpha = 0.1;
             _masterCardImageView.alpha = 1;
             break;
 
-        case CardTypeVisaMasterCard:
+        case CardTypeFilterAll:
             _visaCardImageView.alpha = 1;
             _masterCardImageView.alpha = 1;
             break;
@@ -85,9 +86,9 @@
 }
 
 
-- (void)setSelectedCardType:(CardType)selectedCardType
+- (void)setSelectedCardTypeFilter:(CardTypeFilter)selectedCardTypeFilter
 {
-    _selectedCardType = selectedCardType;
+    _selectedCardTypeFilter = selectedCardTypeFilter;
     [self applyCardTypes];
 }
 @end
