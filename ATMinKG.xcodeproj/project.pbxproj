@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		604B826518509C42008587BA /* iconVisaDetails.png in Resources */ = {isa = PBXBuildFile; fileRef = 604B826318509C42008587BA /* iconVisaDetails.png */; };
+		604B826618509C42008587BA /* iconVisaDetails@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 604B826418509C42008587BA /* iconVisaDetails@2x.png */; };
+		604B826918509C4D008587BA /* iconMastercardDetails.png in Resources */ = {isa = PBXBuildFile; fileRef = 604B826718509C4D008587BA /* iconMastercardDetails.png */; };
+		604B826A18509C4D008587BA /* iconMastercardDetails@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 604B826818509C4D008587BA /* iconMastercardDetails@2x.png */; };
 		60FF9891181A7F370093C838 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FF9890181A7F370093C838 /* Foundation.framework */; };
 		60FF9893181A7F370093C838 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FF9892181A7F370093C838 /* CoreGraphics.framework */; };
 		60FF9895181A7F370093C838 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FF9894181A7F370093C838 /* UIKit.framework */; };
@@ -21,10 +25,25 @@
 		60FF98B2181A7F370093C838 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FF9894181A7F370093C838 /* UIKit.framework */; };
 		60FF98BA181A7F370093C838 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60FF98B8181A7F370093C838 /* InfoPlist.strings */; };
 		60FF98BC181A7F370093C838 /* ATMinKGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FF98BB181A7F370093C838 /* ATMinKGTests.m */; };
+		71F0F027B2D8B761598D56F3 /* iconVisa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0FFA6B280199D4B8D9BE9 /* iconVisa@2x.png */; };
+		71F0F0765182DCCBF0D349FA /* filterBarBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0F22B742F90109F0B0E92 /* filterBarBg.png */; };
+		71F0F1A0C84A8D31984CA6BD /* GRFXFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0F296BA7141529C8EF4FD /* GRFXFilterView.m */; };
+		71F0F1EDCEF74D6B7949DCC0 /* iconAtm.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0F351AD377DE5B0C09619 /* iconAtm.png */; };
+		71F0F31597AF01FB2A87FFF2 /* GRFXBanksProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FF9E93040C9983A77742 /* GRFXBanksProxy.m */; };
+		71F0F4F538C82DFCFFB6BC36 /* iconMastercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0F08FD8211A7D1429184E /* iconMastercard@2x.png */; };
+		71F0F59890B716CFCD5B3C15 /* filterBarBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0F85AB7D3ADE4BEA0691F /* filterBarBg@2x.png */; };
+		71F0F5AF08DF981B4E74D64A /* GRFXFilterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0F97FCA1F153535A1CA01 /* GRFXFilterButton.m */; };
 		71F0F716EA28814081AAE655 /* GRFXATMProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0F7492A8158580CAAD132 /* GRFXATMProxy.m */; };
+		71F0F71EE3F2002C9AA50D57 /* iconVisa.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0F16DD4CA5827B4A4D429 /* iconVisa.png */; };
+		71F0F797C12D3D58B531ACCE /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FD3C6F4E7870C49FED4B /* UIImage+ImageEffects.m */; };
+		71F0F7D407552E3E0410A606 /* GRFXFilterPredicates.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FACF8485DBE99A1B9420 /* GRFXFilterPredicates.m */; };
 		71F0F9BEFD4D6FE2A1FDD9B4 /* GRFXATM.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FCFA13982542571A42BE /* GRFXATM.m */; };
+		71F0FA1550E6118DC6CB9878 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71F0F0302854B2FABDF607BB /* FilterView.xib */; };
+		71F0FCD9F09A4E70CF9F5C80 /* iconMastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0FF2C977507DA2BA88B9B /* iconMastercard.png */; };
 		71F0FD0F60F8451AFF634FCB /* GRFXParsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FBD8D072A4886B05B881 /* GRFXParsers.m */; };
 		71F0FE4B6C1CB28846C9A8CC /* GRFXATMDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0F11145E0975DC49CA9BE /* GRFXATMDetailsViewController.m */; };
+		71F0FEEB569D36EAAE18D43B /* UIView+blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0F82CD68A718B4E56BC7F /* UIView+blur.m */; };
+		71F0FF0830D1A6A3CAD4D462 /* iconAtm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0F29B5E09CDF0F332A1E7 /* iconAtm@2x.png */; };
 		7AAC0416BA6A4465B706ED79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEE78E4B4EA49DD8C60D9C8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +60,10 @@
 /* Begin PBXFileReference section */
 		54998F5DF17F47A589697D02 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		5FEE78E4B4EA49DD8C60D9C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		604B826318509C42008587BA /* iconVisaDetails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconVisaDetails.png; sourceTree = "<group>"; };
+		604B826418509C42008587BA /* iconVisaDetails@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconVisaDetails@2x.png"; sourceTree = "<group>"; };
+		604B826718509C4D008587BA /* iconMastercardDetails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMastercardDetails.png; sourceTree = "<group>"; };
+		604B826818509C4D008587BA /* iconMastercardDetails@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconMastercardDetails@2x.png"; sourceTree = "<group>"; };
 		60FF988D181A7F370093C838 /* ATMinKG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMinKG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FF9890181A7F370093C838 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		60FF9892181A7F370093C838 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,15 +83,36 @@
 		60FF98B7181A7F370093C838 /* ATMinKGTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ATMinKGTests-Info.plist"; sourceTree = "<group>"; };
 		60FF98B9181A7F370093C838 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60FF98BB181A7F370093C838 /* ATMinKGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATMinKGTests.m; sourceTree = "<group>"; };
+		71F0F0302854B2FABDF607BB /* FilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
+		71F0F051E7E5BA62FA18A0E6 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		71F0F08FD8211A7D1429184E /* iconMastercard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconMastercard@2x.png"; sourceTree = "<group>"; };
 		71F0F11145E0975DC49CA9BE /* GRFXATMDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXATMDetailsViewController.m; sourceTree = "<group>"; };
+		71F0F16DD4CA5827B4A4D429 /* iconVisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconVisa.png; sourceTree = "<group>"; };
 		71F0F189C496FBB88637E004 /* GRFXATMProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXATMProxy.h; sourceTree = "<group>"; };
+		71F0F22B742F90109F0B0E92 /* filterBarBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filterBarBg.png; sourceTree = "<group>"; };
+		71F0F296BA7141529C8EF4FD /* GRFXFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXFilterView.m; sourceTree = "<group>"; };
+		71F0F29B5E09CDF0F332A1E7 /* iconAtm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconAtm@2x.png"; sourceTree = "<group>"; };
 		71F0F351066EA68AE90DF5CE /* GRFXATM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXATM.h; sourceTree = "<group>"; };
+		71F0F351AD377DE5B0C09619 /* iconAtm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconAtm.png; sourceTree = "<group>"; };
+		71F0F39B92F870B4C5E92E28 /* GRFXFilterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXFilterButton.h; sourceTree = "<group>"; };
 		71F0F3D2F30B0D23D057A5D0 /* GRFXProxyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXProxyDelegate.h; sourceTree = "<group>"; };
+		71F0F4419A7DE37792C5A88B /* UIView+blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+blur.h"; sourceTree = "<group>"; };
+		71F0F5E8301C9E1B41E71E52 /* GRFXBanksProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXBanksProxy.h; sourceTree = "<group>"; };
 		71F0F7492A8158580CAAD132 /* GRFXATMProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXATMProxy.m; sourceTree = "<group>"; };
+		71F0F7729B29F4B6CBD8AEDF /* GRFXFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXFilterView.h; sourceTree = "<group>"; };
+		71F0F82CD68A718B4E56BC7F /* UIView+blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+blur.m"; sourceTree = "<group>"; };
+		71F0F85AB7D3ADE4BEA0691F /* filterBarBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filterBarBg@2x.png"; sourceTree = "<group>"; };
 		71F0F8D2EDF275727B26ACFF /* GRFXATMDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXATMDetailsViewController.h; sourceTree = "<group>"; };
+		71F0F96580CAD5B349A83466 /* GRFXFilterPredicates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRFXFilterPredicates.h; path = ATMinKG/utils/GRFXFilterPredicates.h; sourceTree = SOURCE_ROOT; };
+		71F0F97FCA1F153535A1CA01 /* GRFXFilterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXFilterButton.m; sourceTree = "<group>"; };
+		71F0FACF8485DBE99A1B9420 /* GRFXFilterPredicates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GRFXFilterPredicates.m; path = ATMinKG/utils/GRFXFilterPredicates.m; sourceTree = SOURCE_ROOT; };
 		71F0FBD8D072A4886B05B881 /* GRFXParsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXParsers.m; sourceTree = "<group>"; };
 		71F0FCFA13982542571A42BE /* GRFXATM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXATM.m; sourceTree = "<group>"; };
+		71F0FD3C6F4E7870C49FED4B /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		71F0FF1D42234948468D72F2 /* GRFXParsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRFXParsers.h; sourceTree = "<group>"; };
+		71F0FF2C977507DA2BA88B9B /* iconMastercard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMastercard.png; sourceTree = "<group>"; };
+		71F0FF9E93040C9983A77742 /* GRFXBanksProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRFXBanksProxy.m; sourceTree = "<group>"; };
+		71F0FFA6B280199D4B8D9BE9 /* iconVisa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconVisa@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +187,10 @@
 				71F0F5777BCC7B2B33B61506 /* utils */,
 				71F0F11145E0975DC49CA9BE /* GRFXATMDetailsViewController.m */,
 				71F0F8D2EDF275727B26ACFF /* GRFXATMDetailsViewController.h */,
+				71F0F0DB12C68D653826F39A /* Assets */,
+				71F0F8590ED848FD382001F3 /* Views */,
+				71F0F3A8AC10E12A2C85B205 /* Blur */,
+				71F0FFF96D25E1CD3FA8B15F /* Utils */,
 			);
 			path = ATMinKG;
 			sourceTree = "<group>";
@@ -176,6 +224,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		71F0F0DB12C68D653826F39A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				604B826718509C4D008587BA /* iconMastercardDetails.png */,
+				604B826818509C4D008587BA /* iconMastercardDetails@2x.png */,
+				604B826318509C42008587BA /* iconVisaDetails.png */,
+				604B826418509C42008587BA /* iconVisaDetails@2x.png */,
+				71F0F351AD377DE5B0C09619 /* iconAtm.png */,
+				71F0F29B5E09CDF0F332A1E7 /* iconAtm@2x.png */,
+				71F0F08FD8211A7D1429184E /* iconMastercard@2x.png */,
+				71F0FF2C977507DA2BA88B9B /* iconMastercard.png */,
+				71F0FFA6B280199D4B8D9BE9 /* iconVisa@2x.png */,
+				71F0F16DD4CA5827B4A4D429 /* iconVisa.png */,
+				71F0F22B742F90109F0B0E92 /* filterBarBg.png */,
+				71F0F85AB7D3ADE4BEA0691F /* filterBarBg@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		71F0F3A8AC10E12A2C85B205 /* Blur */ = {
+			isa = PBXGroup;
+			children = (
+				71F0F4419A7DE37792C5A88B /* UIView+blur.h */,
+				71F0F051E7E5BA62FA18A0E6 /* UIImage+ImageEffects.h */,
+				71F0F82CD68A718B4E56BC7F /* UIView+blur.m */,
+				71F0FD3C6F4E7870C49FED4B /* UIImage+ImageEffects.m */,
+			);
+			path = Blur;
+			sourceTree = "<group>";
+		};
 		71F0F4FFC7147E0C5ED43804 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,14 +272,37 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		71F0F8590ED848FD382001F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71F0F39B92F870B4C5E92E28 /* GRFXFilterButton.h */,
+				71F0F97FCA1F153535A1CA01 /* GRFXFilterButton.m */,
+				71F0F7729B29F4B6CBD8AEDF /* GRFXFilterView.h */,
+				71F0F296BA7141529C8EF4FD /* GRFXFilterView.m */,
+				71F0F0302854B2FABDF607BB /* FilterView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		71F0FF7E00C98732CB0148ED /* service */ = {
 			isa = PBXGroup;
 			children = (
 				71F0F7492A8158580CAAD132 /* GRFXATMProxy.m */,
 				71F0F189C496FBB88637E004 /* GRFXATMProxy.h */,
 				71F0F3D2F30B0D23D057A5D0 /* GRFXProxyDelegate.h */,
+				71F0FF9E93040C9983A77742 /* GRFXBanksProxy.m */,
+				71F0F5E8301C9E1B41E71E52 /* GRFXBanksProxy.h */,
 			);
 			path = service;
+			sourceTree = "<group>";
+		};
+		71F0FFF96D25E1CD3FA8B15F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				71F0F96580CAD5B349A83466 /* GRFXFilterPredicates.h */,
+				71F0FACF8485DBE99A1B9420 /* GRFXFilterPredicates.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +355,11 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Adilet Abylov";
 				TargetAttributes = {
+					60FF988C181A7F370093C838 = {
+						DevelopmentTeam = VMU86T7C97;
+					};
 					60FF98AD181A7F370093C838 = {
-						TestTargetID = 60FF988C181A7F370093C838 /* ATMinKG */;
+						TestTargetID = 60FF988C181A7F370093C838;
 					};
 				};
 			};
@@ -283,9 +387,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604B826618509C42008587BA /* iconVisaDetails@2x.png in Resources */,
+				604B826918509C4D008587BA /* iconMastercardDetails.png in Resources */,
 				60FF98A9181A7F370093C838 /* Images.xcassets in Resources */,
 				60FF989B181A7F370093C838 /* InfoPlist.strings in Resources */,
+				604B826A18509C4D008587BA /* iconMastercardDetails@2x.png in Resources */,
 				60FF98A4181A7F370093C838 /* Main.storyboard in Resources */,
+				71F0F1EDCEF74D6B7949DCC0 /* iconAtm.png in Resources */,
+				604B826518509C42008587BA /* iconVisaDetails.png in Resources */,
+				71F0FF0830D1A6A3CAD4D462 /* iconAtm@2x.png in Resources */,
+				71F0F4F538C82DFCFFB6BC36 /* iconMastercard@2x.png in Resources */,
+				71F0FCD9F09A4E70CF9F5C80 /* iconMastercard.png in Resources */,
+				71F0F027B2D8B761598D56F3 /* iconVisa@2x.png in Resources */,
+				71F0F71EE3F2002C9AA50D57 /* iconVisa.png in Resources */,
+				71F0FA1550E6118DC6CB9878 /* FilterView.xib in Resources */,
+				71F0F0765182DCCBF0D349FA /* filterBarBg.png in Resources */,
+				71F0F59890B716CFCD5B3C15 /* filterBarBg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +461,12 @@
 				71F0F716EA28814081AAE655 /* GRFXATMProxy.m in Sources */,
 				71F0FD0F60F8451AFF634FCB /* GRFXParsers.m in Sources */,
 				71F0FE4B6C1CB28846C9A8CC /* GRFXATMDetailsViewController.m in Sources */,
+				71F0F31597AF01FB2A87FFF2 /* GRFXBanksProxy.m in Sources */,
+				71F0F5AF08DF981B4E74D64A /* GRFXFilterButton.m in Sources */,
+				71F0F1A0C84A8D31984CA6BD /* GRFXFilterView.m in Sources */,
+				71F0FEEB569D36EAAE18D43B /* UIView+blur.m in Sources */,
+				71F0F797C12D3D58B531ACCE /* UIImage+ImageEffects.m in Sources */,
+				71F0F7D407552E3E0410A606 /* GRFXFilterPredicates.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +594,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ATMinKG/ATMinKG-Prefix.pch";
 				INFOPLIST_FILE = "ATMinKG/ATMinKG-Info.plist";
@@ -487,6 +611,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ATMinKG/ATMinKG-Prefix.pch";
 				INFOPLIST_FILE = "ATMinKG/ATMinKG-Info.plist";

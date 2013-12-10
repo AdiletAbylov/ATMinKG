@@ -5,14 +5,17 @@
 
 
 #import <Foundation/Foundation.h>
-
+#import <Google-Maps-iOS-SDK/GoogleMaps/GMSMapView.h>
 @class GRFXATM;
 
 
-@interface GRFXATMDetailsViewController : UITableViewController
+@interface GRFXATMDetailsViewController : UITableViewController <GMSMapViewDelegate>
 @property(weak) IBOutlet UILabel *bankNameLabel;
 @property(weak) IBOutlet UILabel *addressLabel;
-@property(weak) IBOutlet UILabel *cardTypeLabel;
+@property(weak) IBOutlet UIImageView *visaCardImageView;
+@property(weak) IBOutlet UIImageView *masterCardImageView;
+@property(weak) IBOutlet UITableViewCell *mapCell;
+
 
 @property GRFXATM *atm;
 
