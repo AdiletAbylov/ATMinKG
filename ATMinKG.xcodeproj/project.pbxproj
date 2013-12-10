@@ -64,7 +64,7 @@
 		604B826418509C42008587BA /* iconVisaDetails@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconVisaDetails@2x.png"; sourceTree = "<group>"; };
 		604B826718509C4D008587BA /* iconMastercardDetails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMastercardDetails.png; sourceTree = "<group>"; };
 		604B826818509C4D008587BA /* iconMastercardDetails@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconMastercardDetails@2x.png"; sourceTree = "<group>"; };
-		60FF988D181A7F370093C838 /* ATMinKG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMinKG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60FF988D181A7F370093C838 /* ATM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FF9890181A7F370093C838 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		60FF9892181A7F370093C838 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		60FF9894181A7F370093C838 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -154,7 +154,7 @@
 		60FF988E181A7F370093C838 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60FF988D181A7F370093C838 /* ATMinKG.app */,
+				60FF988D181A7F370093C838 /* ATM.app */,
 				60FF98AE181A7F370093C838 /* ATMinKGTests.xctest */,
 			);
 			name = Products;
@@ -308,9 +308,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		60FF988C181A7F370093C838 /* ATMinKG */ = {
+		60FF988C181A7F370093C838 /* ATM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60FF98BF181A7F370093C838 /* Build configuration list for PBXNativeTarget "ATMinKG" */;
+			buildConfigurationList = 60FF98BF181A7F370093C838 /* Build configuration list for PBXNativeTarget "ATM" */;
 			buildPhases = (
 				4B54099F46EF43D9BD2000A0 /* Check Pods Manifest.lock */,
 				60FF9889181A7F370093C838 /* Sources */,
@@ -322,9 +322,9 @@
 			);
 			dependencies = (
 			);
-			name = ATMinKG;
+			name = ATM;
 			productName = ATMinKG;
-			productReference = 60FF988D181A7F370093C838 /* ATMinKG.app */;
+			productReference = 60FF988D181A7F370093C838 /* ATM.app */;
 			productType = "com.apple.product-type.application";
 		};
 		60FF98AD181A7F370093C838 /* ATMinKGTests */ = {
@@ -376,7 +376,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60FF988C181A7F370093C838 /* ATMinKG */,
+				60FF988C181A7F370093C838 /* ATM */,
 				60FF98AD181A7F370093C838 /* ATMinKGTests */,
 			);
 		};
@@ -483,7 +483,7 @@
 /* Begin PBXTargetDependency section */
 		60FF98B4181A7F370093C838 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 60FF988C181A7F370093C838 /* ATMinKG */;
+			target = 60FF988C181A7F370093C838 /* ATM */;
 			targetProxy = 60FF98B3181A7F370093C838 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -676,7 +676,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60FF98BF181A7F370093C838 /* Build configuration list for PBXNativeTarget "ATMinKG" */ = {
+		60FF98BF181A7F370093C838 /* Build configuration list for PBXNativeTarget "ATM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60FF98C0181A7F370093C838 /* Debug */,
