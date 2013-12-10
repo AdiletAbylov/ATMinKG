@@ -13,6 +13,7 @@
 #import "GRFXATMDetailsViewController.h"
 #import "GMSMapView+Animation.h"
 #import "GRFXFilterButton.h"
+#import "UIView+blur.h"
 
 @interface GRFXMapViewController ()
 {
@@ -26,6 +27,7 @@
     GRFXFilterButton *_filterButton;
     NSString *_selectedBank;
     CardType _selectedCardType;
+    UIImageView *_snapshotImageView;
 }
 @end
 
@@ -179,10 +181,18 @@
 
 - (void)showFilterAnimated
 {
+    UIImage *snapshot = [self.view blurredSnapshot];
+    _snapshotImageView = [[UIImageView alloc] initWithImage:snapshot];
+    _snapshotImageView.alpha = 0;
+    [self.view insertSubview:_snapshotImageView belowSubview:_filterView];
     [UIView animateWithDuration:0.3 animations:^
     {
         _filterView.frame = (CGRect) {0, self.view.frame.size.height - _filterView.frame.size.height, _filterView.frame.size};
-    }                completion:nil];
+        _snapshotImageView.alpha = 1;
+    }                completion:^(BOOL finished)
+    {
+        _mapView.userInteractionEnabled = NO;
+    }];
 }
 
 - (void)hideFilterAnimated
@@ -190,6 +200,13 @@
     [UIView animateWithDuration:0.3 animations:^
     {
         _filterView.frame = (CGRect) {0, self.view.frame.size.height, _filterView.frame.size};
-    }                completion:nil];
+        _snapshotImageView.alpha = 0;
+    }                completion:^(BOOL finished)
+    {
+        _mapView.userInteractionEnabled = YES;
+        [_snapshotImageView removeFromSuperview];
+        _snapshotImageView = nil;
+    }];
+
 }
 @end

@@ -15,8 +15,11 @@
 
 @property(weak) IBOutlet UISegmentedControl *cardsSegmentedControl;
 @property(weak) IBOutlet UIPickerView *banksPickerView;
+@property(weak) IBOutlet UIImageView *backgroundImageView;
 @property(weak) id <GRFXFilterViewDelegate> delegate;
 @property(nonatomic) NSArray *banks;
+
+- (void)setBlurredImage:(UIImage *)image;
 
 - (IBAction)didTouchApply:(id)sender;
 @end

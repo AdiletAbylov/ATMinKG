@@ -16,6 +16,7 @@
     __weak UIPickerView *_banksPickerView;
     __weak id <GRFXFilterViewDelegate> _delegate;
     NSArray *_banks;
+    __weak UIImageView *_backgroundImageView;
 }
 @synthesize cardsSegmentedControl = _cardsSegmentedControl;
 @synthesize banksPickerView = _banksPickerView;
@@ -23,6 +24,8 @@
 @synthesize delegate = _delegate;
 
 @synthesize banks = _banks;
+
+@synthesize backgroundImageView = _backgroundImageView;
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
@@ -65,4 +68,10 @@
     _banks = banks;
     [_banksPickerView reloadAllComponents];
 }
+
+- (void)setBlurredImage:(UIImage *)image
+{
+    _backgroundImageView.image = image;
+}
+
 @end
