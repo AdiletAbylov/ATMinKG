@@ -39,7 +39,7 @@
                     </connections>
                 </pickerView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
