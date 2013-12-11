@@ -25,6 +25,10 @@
     self = [super initWithFrame:frame];
     if (self)
     {
+        self.layer.shadowColor = [[UIColor blackColor] CGColor];
+        self.layer.shadowOpacity = 0.5;
+        self.layer.shadowRadius = 2;
+        self.layer.shadowOffset = (CGSize){0,0};
         [self initCards];
         [self initLabel];
         [self applyCardTypes];
