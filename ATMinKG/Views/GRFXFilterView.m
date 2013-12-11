@@ -7,7 +7,6 @@
 #import "GRFXFilterView.h"
 
 
-
 @implementation GRFXFilterView
 {
 
@@ -43,8 +42,7 @@
 }
 
 
-
-- (CardTypeFilter)cardType
+- (CardTypeFilter)cardTypeFilterFromSegmentedControl
 {
     switch (_cardsSegmentedControl.selectedSegmentIndex)
     {
@@ -60,7 +58,7 @@
 
 - (IBAction)didTouchApply:(id)sender
 {
-    [_delegate filterViewDidApplyFilterForCards:[self cardType] bank:[_banks objectAtIndex:[_banksPickerView selectedRowInComponent:0]]];
+    [_delegate filterViewDidApplyFilterForCards:[self cardTypeFilterFromSegmentedControl] bank:self.selectedBank];
 }
 
 - (void)setBanks:(NSArray *)banks
@@ -69,9 +67,13 @@
     [_banksPickerView reloadAllComponents];
 }
 
-- (void)setBlurredImage:(UIImage *)image
+- (CardTypeFilter)selectedCardTypeFilter
 {
-    _backgroundImageView.image = image;
+    return [self cardTypeFilterFromSegmentedControl];
 }
 
+- (NSString *)selectedBank
+{
+    return [_banks objectAtIndex:[_banksPickerView selectedRowInComponent:0]];
+}
 @end

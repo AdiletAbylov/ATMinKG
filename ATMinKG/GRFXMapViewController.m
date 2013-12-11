@@ -52,11 +52,11 @@
 
     [self fetchAllData];
     [self initFilterButtonAndView];
+
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
-
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
 }
 
@@ -164,6 +164,7 @@
     [self hideFilterAnimated];
 }
 
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     GRFXATMDetailsViewController *detailsViewController = segue.destinationViewController;
@@ -185,12 +186,27 @@
     [self showFilterAnimated];
 }
 
-- (void)showFilterAnimated
+- (void)initSnapshotImage
 {
     UIImage *snapshot = [self.view blurredSnapshot];
     _snapshotImageView = [[UIImageView alloc] initWithImage:snapshot];
     _snapshotImageView.alpha = 0;
+    _snapshotImageView.userInteractionEnabled = YES;
+    [_snapshotImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTouchSnapshotImage:)]];
     [self.view insertSubview:_snapshotImageView belowSubview:_filterView];
+}
+
+- (void)didTouchSnapshotImage:(id)sender
+{
+    if (_snapshotImageView)
+    {
+        [self filterViewDidApplyFilterForCards:_filterView.selectedCardTypeFilter bank:_filterView.selectedBank];
+    }
+}
+
+- (void)showFilterAnimated
+{
+    [self initSnapshotImage];
     [UIView animateWithDuration:0.3 animations:^
     {
         _filterView.frame = (CGRect) {0, self.view.frame.size.height - _filterView.frame.size.height, _filterView.frame.size};
@@ -211,6 +227,7 @@
     {
         _mapView.userInteractionEnabled = YES;
         [_snapshotImageView removeFromSuperview];
+        [_snapshotImageView removeGestureRecognizer:[_snapshotImageView.gestureRecognizers objectAtIndex:0]];
         _snapshotImageView = nil;
     }];
 }

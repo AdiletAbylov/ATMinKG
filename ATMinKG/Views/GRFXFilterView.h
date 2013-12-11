@@ -28,8 +28,8 @@ typedef enum CardTypeFilter
 @property(weak) IBOutlet UIImageView *backgroundImageView;
 @property(weak) id <GRFXFilterViewDelegate> delegate;
 @property(nonatomic) NSArray *banks;
-
-- (void)setBlurredImage:(UIImage *)image;
+@property(nonatomic) NSString *selectedBank;
+@property(nonatomic) CardTypeFilter selectedCardTypeFilter;
 
 - (IBAction)didTouchApply:(id)sender;
 @end
