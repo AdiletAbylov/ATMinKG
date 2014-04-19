@@ -19,16 +19,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - DCKeyValueObjectMapping (1.4)
-  - Google-Maps-iOS-SDK (1.5.0)
+  - Google-Maps-iOS-SDK (1.7.2)
 
 DEPENDENCIES:
   - AFNetworking
   - DCKeyValueObjectMapping (~> 1.4)
-  - Google-Maps-iOS-SDK (~> 1.5.0)
+  - Google-Maps-iOS-SDK (~> 1.7.0)
 
 SPEC CHECKSUMS:
   AFNetworking: ae513199cca79e9d7af2708ccabe2ed075550c42
   DCKeyValueObjectMapping: 39adaf0a54ff6368a22d9221db60f0696d81ad7b
-  Google-Maps-iOS-SDK: 11001432e431eb4bf76e4f3b0775cf4610fee791
+  Google-Maps-iOS-SDK: 14de93ec6d63ac83655a5029e3e7788c5ba70900
 
 COCOAPODS: 0.32.1
