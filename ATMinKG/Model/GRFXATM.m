@@ -4,6 +4,7 @@
 //
 
 
+#import <MapKit/MapKit.h>
 #import "GRFXATM.h"
 
 
@@ -52,4 +53,15 @@
     }
     return nil;
 }
+
+- (MKPointAnnotation *)annotation
+{
+    MKPointAnnotation *pointAnnotation = [[MKPointAnnotation alloc] init];
+    pointAnnotation.title = _bankName;
+    pointAnnotation.subtitle = _address;
+    pointAnnotation.coordinate = self.coordinate;
+    return pointAnnotation;
+}
+
+
 @end

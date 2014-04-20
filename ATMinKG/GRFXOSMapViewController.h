@@ -5,9 +5,10 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+#import "GRFXATMProxy.h"
 
 @class MKMapView;
 
-@interface GRFXOSMapViewController : UIViewController <MKMapViewDelegate>
+@interface GRFXOSMapViewController : UIViewController <MKMapViewDelegate, GRFXATMProxyDelegate>
 @property(weak) IBOutlet MKMapView *mapView;
 @end

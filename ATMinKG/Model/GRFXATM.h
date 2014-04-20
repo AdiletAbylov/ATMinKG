@@ -6,6 +6,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+
 
 typedef enum CardType
 {
@@ -23,4 +25,6 @@ typedef enum CardType
 @property(readonly) CardType cardType;
 @property NSString *cardTypeString;
 @property NSString *bankName;
+@property(readonly, nonatomic) MKPointAnnotation *annotation;
+
 @end
