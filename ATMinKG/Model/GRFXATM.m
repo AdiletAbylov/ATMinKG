@@ -63,5 +63,15 @@
     return pointAnnotation;
 }
 
+- (NSString *)title
+{
+    return _bankName;
+}
+
+- (NSString *)subtitle
+{
+    return _address;
+}
+
 
 @end
