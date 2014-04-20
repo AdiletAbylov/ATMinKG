@@ -20,15 +20,21 @@ PODS:
     - AFNetworking/NSURLSession
   - DCKeyValueObjectMapping (1.4)
   - Google-Maps-iOS-SDK (1.7.2)
+  - MKMapView-ZoomLevel (1.1.0)
+  - RXCollections (1.0)
 
 DEPENDENCIES:
   - AFNetworking
   - DCKeyValueObjectMapping (~> 1.4)
   - Google-Maps-iOS-SDK (~> 1.7.0)
+  - MKMapView-ZoomLevel (~> 1.1.0)
+  - RXCollections (~> 1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: ae513199cca79e9d7af2708ccabe2ed075550c42
   DCKeyValueObjectMapping: 39adaf0a54ff6368a22d9221db60f0696d81ad7b
   Google-Maps-iOS-SDK: 14de93ec6d63ac83655a5029e3e7788c5ba70900
+  MKMapView-ZoomLevel: a5c40a499eff1c1ec73bf12cf21e1a823dbc53cd
+  RXCollections: 7df8fcb97b433260a11ce226dd74b50545ff0a0f
 
 COCOAPODS: 0.32.1

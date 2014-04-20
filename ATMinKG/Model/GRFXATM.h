@@ -6,6 +6,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+
 
 typedef enum CardType
 {
@@ -14,13 +16,15 @@ typedef enum CardType
     CardTypeVisaMasterCard
 } CardType;
 
-@interface GRFXATM : NSObject
+@interface GRFXATM : NSObject <MKAnnotation>
 @property NSString *atmId;
 @property NSString *address;
 @property double lng;
 @property double lat;
-@property(readonly) CLLocationCoordinate2D coordinate;
+@property(readonly, nonatomic) CLLocationCoordinate2D coordinate;
 @property(readonly) CardType cardType;
 @property NSString *cardTypeString;
 @property NSString *bankName;
+@property(readonly, nonatomic) MKPointAnnotation *annotation;
+
 @end

@@ -1,3 +1,5 @@
 pod 'Google-Maps-iOS-SDK', '~> 1.7.0'
 pod 'AFNetworking'
 pod 'DCKeyValueObjectMapping', '~> 1.4'
+pod 'MKMapView-ZoomLevel', '~> 1.1.0'
+pod 'RXCollections', '~> 1.0'
